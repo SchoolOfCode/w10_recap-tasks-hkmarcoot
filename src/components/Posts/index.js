@@ -1,4 +1,4 @@
-import css from "./App.css";
+import css from "./Posts.module.css";
 import React from "react";
 import Post from "../Post/index.js";
 
