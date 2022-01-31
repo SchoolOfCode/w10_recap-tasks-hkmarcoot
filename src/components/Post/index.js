@@ -1,4 +1,4 @@
-import "../App/App.css";
+import css from "./Post.module.css";
 import H2header from "../h2header/index.js";
 import Article from "../Article/index.js";
 import Comments from "../Comments/index.js";
@@ -10,9 +10,9 @@ function Post({ articles, index }) {
 
       <Article article={articles[index]} />
 
-      <button className="like-button">Like 👍</button>
+      <button className={css.likeBbutton}>Like 👍</button>
 
-      <section className="comment-section">
+      <section className={css.commentSection}>
         <Comments comments={articles[index].comments} />
       </section>
     </>
